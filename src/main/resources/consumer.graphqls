@@ -1,0 +1,20 @@
+#
+# Schemas must have at least a query root type
+#
+schema {
+    query: Query
+    subscription : Subscription
+}
+
+type Query {
+    helo : String
+}
+
+type Subscription {
+    records: Record
+}
+
+type Record {
+    key: String
+    value: String
+}
